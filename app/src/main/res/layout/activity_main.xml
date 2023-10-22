@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/wrongAnswersTextView"
+        android:layout_width="82dp"
+        android:layout_height="25dp"
+        android:text="@string/wrongAnswers"
+        android:textColor="#ED0909"
+        app:layout_constraintBottom_toTopOf="@+id/timeTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.747"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.556" />
+
+    <TextView
+        android:id="@+id/countWrongAnswerTextView"
+        android:layout_width="55dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="@string/startAnswer"
+        android:textAlignment="center"
+        android:textColor="#ED0909"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/avgTimeTextTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toEndOf="@+id/timeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/wrongAnswersTextView"
+        app:layout_constraintVertical_bias="0.114" />
+
+    <TextView
+        android:id="@+id/countCorrectAnswerTextView"
+        android:layout_width="55dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="@string/startAnswer"
+        android:textAlignment="center"
+        android:textColor="#68B50E"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/minTimeTextTextView"
+        app:layout_constraintEnd_toStartOf="@+id/timeTextView"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correctAnswersTextView"
+        app:layout_constraintVertical_bias="0.101" />
+
+    <TextView
+        android:id="@+id/maxTimeTextView"
+        android:layout_width="55dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="156dp"
+        android:gravity="center"
+        android:text="@string/startTime"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/taskTextView"
+        app:layout_constraintEnd_toStartOf="@+id/avgTimeTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minTimeTextTextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/minTimeTextView"
+        android:layout_width="55dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="52dp"
+        android:gravity="center"
+        android:text="@string/startTime"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/taskTextView"
+        app:layout_constraintEnd_toStartOf="@+id/maxTimeTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minTimeTextTextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/avgTimeTextView"
+        android:layout_width="55dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="@string/avgStartTime"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/taskTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.721"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minTimeTextTextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/correctButton"
+        android:layout_width="151dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="4dp"
+        android:enabled="false"
+        android:onClick="btnCorrect"
+        android:text="@string/correctButton"
+        app:layout_constraintBottom_toTopOf="@+id/startButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/startButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.993" />
+
+    <TextView
+        android:id="@+id/taskTextView"
+        android:layout_width="336dp"
+        android:layout_height="135dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/taskTextView"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/startButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.816" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/correctAnswersTextView"
+        android:layout_width="82dp"
+        android:layout_height="25dp"
+        android:text="@string/correctAnswers"
+        android:textColor="#68B50E"
+        app:layout_constraintBottom_toTopOf="@+id/timeTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562" />
+
+    <TextView
+        android:id="@+id/totalAnswerTextTextView"
+        android:layout_width="210dp"
+        android:layout_height="27dp"
+        android:text="@string/totalAnswer"
+        app:layout_constraintBottom_toTopOf="@+id/timeTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.153" />
+
+    <TextView
+        android:id="@+id/totalAnswerTextView"
+        android:layout_width="61dp"
+        android:layout_height="27dp"
+        android:text="@string/startAnswer"
+        app:layout_constraintBottom_toTopOf="@+id/timeTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toEndOf="@+id/totalAnswerTextTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.153" />
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="110dp"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:text="@string/timeText"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/percentCorrectAnswersTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.391" />
+
+    <TextView
+        android:id="@+id/minTimeTextTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minTime"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/maxTimeTextTextView"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.258" />
+
+    <TextView
+        android:id="@+id/maxTimeTextTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:text="@string/maxTime"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/avgTimeTextTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.258" />
+
+    <TextView
+        android:id="@+id/avgTimeTextTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:text="@string/avgTime"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.258" />
+
+    <TextView
+        android:id="@+id/percentCorrectAnswersTextView"
+        android:layout_width="156dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="68dp"
+        android:text="@string/percentCorrectAnswersTextView"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/taskTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/wrongButton"
+        android:layout_width="151dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="4dp"
+        android:enabled="false"
+        android:onClick="btnWrong"
+        android:text="@string/wrongButton"
+        app:layout_constraintBottom_toTopOf="@+id/startButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.991" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="339dp"
+        android:layout_height="52dp"
+        android:onClick="btnStart"
+        android:text="@string/startButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.961" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

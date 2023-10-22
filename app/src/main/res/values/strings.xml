@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">calcCheck</string>
+    <string name="startButton">Начать</string>
+    <string name="correctButton">ВЕРНО</string>
+    <string name="wrongButton">НЕВЕРНО</string>
+    <string name="taskTextView">00 + 00 = 00</string>
+    <string name="percentCorrectAnswersTextView">0.00%</string>
+    <string name="startTime">0</string>
+    <string name="minTime">Минимум</string>
+    <string name="maxTime">Максиум</string>
+    <string name="avgTime">Среднее</string>
+    <string name="avgStartTime">0.00</string>
+    <string name="timeText">ВРЕМЯ (сек)</string>
+    <string name="correctAnswers">Правильно</string>
+    <string name="wrongAnswers">Неверно</string>
+    <string name="startAnswer">0</string>
+    <string name="totalAnswer">Итого проверено примеров</string>
+</resources>
